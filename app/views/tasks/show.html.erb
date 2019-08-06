@@ -1,0 +1,13 @@
+<h2><%= @task.title %></h2>
+
+<%= check_box("tag", tag.id, {checked: false}) %>
+<%= @task.details %>
+<br>
+<br>
+<%= link_to "Back to list", tasks_path %>
+<br>
+<%= link_to "Add a new task", new_task_path %>
+<br>
+<%= link_to "Edit a task", edit_task_path %>
+
+
